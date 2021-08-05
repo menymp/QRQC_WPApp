@@ -1,0 +1,244 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+QRQC_App
+</name>
+</assembly>
+<members>
+<member name="T:QRQC_App.My.MyWpfExtension">
+ <summary>
+ Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:QRQC_App.My.MyWpfExtension.Application">
+ <summary>
+ Devuelve el objeto de aplicación de la aplicación en ejecución
+ </summary>
+</member>
+<member name="P:QRQC_App.My.MyWpfExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:QRQC_App.My.MyWpfExtension.User">
+ <summary>
+ Devuelve información sobre el usuario actual.  Si desea ejecutar la aplicación con las credenciales 
+ del usuario de Windows actual, llame a My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:QRQC_App.My.MyWpfExtension.Log">
+ <summary>
+ Devuelve el registro de la aplicación. El archivo de configuración de la aplicación puede configurar los clientes de escucha.
+ </summary>
+</member>
+<member name="P:QRQC_App.My.MyWpfExtension.Windows">
+ <summary>
+ Devuelve la colección de Windows definida en el proyecto.
+ </summary>
+</member>
+<member name="T:QRQC_App.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:QRQC_App.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:QRQC_App.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:QRQC_App.DatabaseDriver">
+ <summary>
+ Controlador de acceso para base de datos
+ </summary>
+</member>
+<member name="F:QRQC_App.DatabaseDriver._ConnString">
+ <summary>
+ Cadena de conexiones
+ </summary>
+</member>
+<member name="F:QRQC_App.DatabaseDriver.Db_ConnObj">
+ <summary>
+ Adaptador de conexion
+ </summary>
+</member>
+<member name="P:QRQC_App.DatabaseDriver.ConnectionString">
+ <summary>
+ Obtiene o establece la cadena de coneccion con la base de datos
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:QRQC_App.DatabaseDriver.connect">
+ <summary>
+ Crea un intento de conexion a la base de datos
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:QRQC_App.DatabaseDriver.closeConn">
+ <summary>
+ Cierra la conexion
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:QRQC_App.DatabaseDriver.ExecuteQUERY">
+ <summary>
+ Ejecutar un comando
+ </summary>
+ <returns>resultado</returns>
+</member>
+<member name="T:QRQC_App.QRQC_InfoFill">
+<summary>
+QRQC_InfoFill
+</summary>
+</member>
+<member name="F:QRQC_App.QRQC_InfoFill._ParentScreen">
+ <summary>
+ Ventana padre
+ </summary>
+</member>
+<member name="F:QRQC_App.QRQC_InfoFill.QRQCObj">
+ <summary>
+ Objeto qrqc
+ </summary>
+</member>
+<member name="P:QRQC_App.QRQC_InfoFill.ParentScreen">
+ <summary>
+ Obtiene o establece la ventana padre original
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:QRQC_App.QRQC_InfoFill.BtnCancelar_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ Vuelve a la pantalla principal
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:QRQC_App.QRQC_InfoFill.BtnGuardar_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ Guarda QRQC y vuelve al dashboard principal
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:QRQC_App.QRQC_InfoFill.BtnGetDate_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ Establece como fecha el instante actual
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:QRQC_App.QRQC_InfoFill.LoadQRQC(QRQC_App.QRQC)">
+ <summary>
+ Despliega la informacion de un QRQC existente
+ </summary>
+ <param name="QRQCObj"></param>
+</member>
+<member name="M:QRQC_App.QRQC_InfoFill.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:QRQC_App.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:QRQC_App.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:QRQC_App.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="F:QRQC_App.QRQC._ID">
+ <summary>
+ identificador
+ </summary>
+</member>
+<member name="F:QRQC_App.QRQC._OpenDate">
+ <summary>
+ Representa la fecha de apertura
+ </summary>
+</member>
+<member name="F:QRQC_App.QRQC._ProblemBrief">
+ <summary>
+ Breve descripcion del problema
+ </summary>
+</member>
+<member name="P:QRQC_App.QRQC.ID">
+ <summary>
+ Obtiene o establece el ID 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:QRQC_App.QRQC.OpenDate">
+ <summary>
+ Obtiene o establece la fecha de carga
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:QRQC_App.QRQC.ProblemBrief">
+ <summary>
+ Obtiene o establece la causa raiz
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:QRQC_App.QRQC.ToString">
+ <summary>
+ Obtiene o establece la representacion del objeto
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:QRQC_App.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:QRQC_App.MainWindow.BtnNewQRQC_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ Crea un nuevo QRQC
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:QRQC_App.MainWindow.AddListItem(QRQC_App.QRQC)">
+ <summary>
+ Añade un nuevo objeto QRQC a la coleccion de despliegue
+ </summary>
+ <param name="QRQC_Obj"></param>
+</member>
+<member name="M:QRQC_App.MainWindow.QRQCList_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+ <summary>
+ Ocurre cuando se da doble click sobre un evento
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:QRQC_App.MainWindow.UpdateScreen">
+ <summary>
+ Actualiza los componentes a desplegar
+ </summary>
+</member>
+<member name="M:QRQC_App.MainWindow.LoadComponents">
+ <summary>
+ Carga los datos de QRQC desde la base de datos
+ </summary>
+</member>
+<member name="M:QRQC_App.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>
